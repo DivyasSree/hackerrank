@@ -1,0 +1,4 @@
+Select IF (sd.marks < 70, 'NULL', sd.name), gd.grade, sd.marks
+from Students as sd, Grades as gd
+WHERE sd.Marks BETWEEN gd.Min_Mark AND gd.Max_Mark
+ORDER BY gd.grade desc, sd.name asc 
