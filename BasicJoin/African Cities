@@ -1,0 +1,4 @@
+SELECT ci.NAME
+FROM CITY as ci, COUNTRY as co
+WHERE ci.countrycode = co.code
+AND co.continent = 'Africa'
